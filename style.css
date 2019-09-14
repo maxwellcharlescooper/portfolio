@@ -36,7 +36,7 @@ a:active {
 
 #icons {
   background-color: #80475E;
-  height: 40rem;
+  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -90,7 +90,8 @@ a:active {
 }
 
 #education {
-  background-color: #C89B7B;
+  /*background-color: #C89B7B;*/
+  background-color: #4B8F8C;
   text-transform: uppercase;
   color: black;
   font-weight: lighter;
@@ -132,4 +133,26 @@ a:active {
 
 #max {
  cursor: pointer;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to { 
+    transform: rotate(360deg);
+  }
+}
+
+#switch {
+    animation-name:            rotate; 
+    animation-duration:        2s; 
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@media screen and (max-width: 850px) {
+  .nav {
+    display: none;
+  }
 }
