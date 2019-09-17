@@ -17,4 +17,11 @@ $(document).ready(function() {
     $('html, body').animate({scrollTop: total}, 'slow');
   });
 
+  $("#future_experience_nav").click(function() {
+    alert("coming soon!");
+  });
+
+  $("#future_projects_nav").click(function() {
+    alert("coming soon!");
+  });
 });
