@@ -35,7 +35,7 @@ a:active {
 }
 
 #icons {
-  background-color: #80475E;
+  background-color: rgb(63, 112, 157);
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -99,6 +99,24 @@ a:active {
   padding: 50px 50px 50px 50px;
 }
 
+#experience{
+  background-color: rgb(130, 61, 127);
+  text-transform: uppercase;
+  color: black;
+  font-weight: lighter;
+  font-size: 35px;
+  padding: 50px 50px 50px 50px;
+}
+
+#projects{
+  background-color: rgb(130, 117, 61);
+  text-transform: uppercase;
+  color: black;
+  font-weight: lighter;
+  font-size: 35px;
+  padding: 50px 50px 50px 50px;
+}
+
 #flex-row {
   display: flex;
   flex-direction: row;
@@ -107,13 +125,13 @@ a:active {
   margin-bottom: 5px;
 }
 
-#coursework {
-  margin-top: 60px;
+#list {
+  margin-top: 40px;
   text-transform: none;
   font-size: 20px;
 }
 
-#coursework-title {
+#list-title {
   font-size: 25px;
 }
 
@@ -128,6 +146,14 @@ a:active {
 }
 
 #education-nav {
+  cursor: pointer;
+}
+
+#experience-nav {
+  cursor: pointer;
+}
+
+#projects-nav {
   cursor: pointer;
 }
 

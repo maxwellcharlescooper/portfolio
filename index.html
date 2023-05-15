@@ -14,27 +14,28 @@
       <div class="nav" id="about-nav">
         About
       </div>
-      <div class="nav" id="education-nav">
-        Education
-      </div>
-      <div class="nav" id="future_experience_nav">
+      <div class="nav" id="experience_nav">
         Experience
       </div>
-      <div class="nav" id="future_projects_nav">
+      <div class="nav" id="projects_nav">
         Projects
+      </div>
+      <div class="nav" id="education-nav">
+        Education
       </div>
     </div>
     <div id="icons">
       <img id="switch" src="icons/nintendo-switch.png" width="128px" height="128px" alt="switch" />
       <!-- Icon from "https://www.flaticon.com/authors/smashicons" -->
     </div>
+
     <div id="about">
       <div id="name">I'm Max.</div>
       <div id="information">
         <div class="info">
           <img class="info-icon" src="icons/location.svg" alt="location" />
           <!-- Icon from "https://www.flaticon.com/authors/freepik" -->
-          Baltimore, MD
+          Brooklyn, NY
         </div>
         <div class="info">
           <img class="info-icon" src="icons/books.png" alt="education" />
@@ -50,8 +51,51 @@
           </a>
         </div>
       </div>
-      <p id="blurb">I'm an avid problem solver and engineer who loves to learn about how the world works. My previous experience is in electrical circuit design, but I am interested in using my technical background to solve real-world problems and expand my skillset.</p>
+      <p id="blurb">I'm an avid problem solver and engineer who loves to learn about how things work. I studied electrical circuit design, but I have transitioned to using my technical background in the software world. I am always looking to solve real-world problems and expand my skillset!</p>
     </div>
+
+    <div id="experience">
+      <div>
+        Experience
+      </div>
+      <hr id="line">
+      <div id="flex-row">
+        <b>Infondrian</b>
+      </div>
+      <div id="flex-row">
+        <div>Full Stack Engineer</div>
+        <em>2020-2023</em>
+      </div>
+      <div id="list">
+      <ul>
+        <li>For a cloud-based radiation oncology chart-checking software startup, built entire frontend SPA from start to finish using React Typescript (including custom hooks) and asynchronous API calls/different custom features, along with many different imported libraries such as styled-components, Axios, react- router-dom, D3.js, momentJS, socket.io, js-cookie, Recharts, qs, etc.</li>
+        <li>Completed backend work (running on NodeJS and TypeScript) including writing Postman API tests, debugging 500 internal server errors, SQL queries (Sequelize) to the database, writing GET functions from the api route to the response and Lambda functions on a separate repository that execute on the db itself</li>
+        <li>Set up entire frontend CI/CD pipeline with GitHub trigger from dev to prod including testing stage using AWS CodePipeline, CodeBuild, CodeDeploy, as well as DNS networking using AWS Route 53 and AWS Cloudfront to point to an S3 bucket</li>
+        <li>Used various Docker containers including running a local PostgreSQL database, an Nginx proxy for a secondary api, frontend testing using Docker containers running CodeceptJS and Chrome</li>
+        <li>Set up authentication for React app using Auth0 and later transitioning to a custom login page with Amazon Cognito</li>
+      </ul>
+    </div>
+    </div>
+
+    <div id="projects">
+      <div>
+        Projects
+      </div>
+      <hr id="line">
+      <div id="flex-row">
+        <b>Raspberry Potter Capstone</b>
+      </div>
+      <div id="list">
+        <div id="list">
+          <ul>
+            <li>Adapted Raspberry Potter GitHub project to program a light to turn on when a Harry Potter wand is pointed and the user says "Lumos"</li>
+            <li>Used Raspberry Pi for computing, Snowboy for hotword detection, and OpenCV for image detection</li>
+            <li>The additional hardware used was a microphone, IR camera module, and a genuine Harry Potter wand from Universal Studios with an IR-reflector-embedded tip</li>
+          </ul>
+        </div>
+    </div>
+    </div>
+
     <div id="education">
       <div>Education</div>
       <hr id="line">
@@ -63,8 +107,8 @@
         <div>Electrical Engineering, Sc.B.</div>
         <div>Providence, RI</div>
       </div>
-      <div id="coursework">
-        <div id="coursework-title">Relevant Coursework:</div>
+      <div id="list">
+        <div id="list-title">Relevant Coursework:</div>
         <ul>
           <li>Interfaces, Information, and Automation</li>
           <li>Introduction to Scientific Computing and Problem Solving</li>

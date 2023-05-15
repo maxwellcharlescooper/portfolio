@@ -17,11 +17,17 @@ $(document).ready(function() {
     $('html, body').animate({scrollTop: total}, 'slow');
   });
 
-  $("#future_experience_nav").click(function() {
-    alert("coming soon!");
+  $("#experience_nav").click(function() {
+    const distanceFromTop = $("#experience").offset().top;
+    const headerHeight = $("#header").height();
+    const total = distanceFromTop - headerHeight;
+    $('html, body').animate({scrollTop: total}, 'slow');
   });
 
-  $("#future_projects_nav").click(function() {
-    alert("coming soon!");
+  $("#projects_nav").click(function() {
+    const distanceFromTop = $("#projects").offset().top;
+    const headerHeight = $("#header").height();
+    const total = distanceFromTop - headerHeight;
+    $('html, body').animate({scrollTop: total}, 'slow');
   });
 });
