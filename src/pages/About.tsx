@@ -14,38 +14,30 @@ const About = () => {
   const navigate = useNavigate();
 
   const [introProps, introApi] = useSpring(() => ({
-    from: { opacity: 0, y: "0%" },
-    to: { opacity: 1, y: "100%" }
-  }));
-  const [experienceProps, experienceApi] = useSpring(() => ({
-    from: { opacity: 0, x: "0%" },
-    to: { opacity: 1, x: "100%" }
+    from: { opacity: 0, y: "-100px" },
+    to: { opacity: 1, y: "0px" }
   }));
   const [projectsProps, projectsApi] = useSpring(() => ({
-    from: { opacity: 0, x: "100%" },
-    to: { opacity: 1, x: "0%" }
+    from: { opacity: 0, x: "100px" },
+    to: { opacity: 1, x: "0px" }
   }));
   const [resumeProps, resumeApi] = useSpring(() => ({
-    from: { opacity: 0, y: "100%" },
-    to: { opacity: 1, y: "0%" }
+    from: { opacity: 0, y: "100px" },
+    to: { opacity: 1, y: "0px" }
   }));
 
   const handleClick = async (route: string) => {
     introApi.start({
-      from: { opacity: 1, y: "100%" },
-      to: { opacity: 0, y: "0%" }
-    });
-    experienceApi.start({
-      from: { opacity: 1, x: "100%" },
-      to: { opacity: 0, x: "0%" }
+      from: { opacity: 1, y: "0px" },
+      to: { opacity: 0, y: "-100px" }
     });
     projectsApi.start({
-      from: { opacity: 1, x: "0%" },
-      to: { opacity: 0, x: "100%" }
+      from: { opacity: 1, x: "0px" },
+      to: { opacity: 0, x: "100px" }
     });
     resumeApi.start({
-      from: { opacity: 1, y: "0%" },
-      to: { opacity: 0, y: "100%" }
+      from: { opacity: 1, y: "0px" },
+      to: { opacity: 0, y: "100px" }
     });
     await sleep(350);
     navigate(route);
@@ -55,11 +47,6 @@ const About = () => {
       <animated.div style={{ ...introProps }}>
         <Styled.ClickBox onClick={() => handleClick(routes.intro)}>
           intro
-        </Styled.ClickBox>
-      </animated.div>
-      <animated.div style={{ ...experienceProps }}>
-        <Styled.ClickBox onClick={() => handleClick(routes.experience)}>
-          experience
         </Styled.ClickBox>
       </animated.div>
       <animated.div style={{ ...projectsProps }}>
