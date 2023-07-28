@@ -33,7 +33,7 @@ const About = () => {
     });
     projectsApi.start({
       from: { opacity: 1, x: "0px" },
-      to: { opacity: 0, x: "100px" }
+      to: { opacity: 0, x: "-100px" }
     });
     resumeApi.start({
       from: { opacity: 1, y: "0px" },
