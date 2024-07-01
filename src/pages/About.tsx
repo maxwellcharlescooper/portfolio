@@ -43,7 +43,7 @@ const About = () => {
     navigate(route);
   };
   return (
-    <Styled.Background color={Colors.PINK}>
+    <Styled.Background color={Colors.RED}>
       <animated.div style={{ ...introProps }}>
         <Styled.ClickBox onClick={() => handleClick(routes.intro)}>
           intro

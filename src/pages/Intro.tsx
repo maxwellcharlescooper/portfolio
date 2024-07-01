@@ -23,11 +23,11 @@ const Intro = () => {
     navigate(routes.about);
   };
   return (
-    <Styled.Background color={Colors.SAND}>
+    <Styled.Background color={Colors.RED}>
       <animated.div style={{ ...props }}>
         <Styled.TextBox onClick={handleClick}>
-          Hello {"\n"}I am Max {"\n"}
-          and I code from time to time
+          hey what's good! {"\n"}i'm max {"\n"}
+          and i code
         </Styled.TextBox>
       </animated.div>
     </Styled.Background>

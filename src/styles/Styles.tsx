@@ -58,7 +58,7 @@ const Background = styled(FlexColumn)<{ color: string }>`
   align-content: center;
 `;
 
-const ClickBox = styled(FlexRow)`
+const ClickBox = styled(FlexRow)<{ color?: string }>`
   margin-bottom: 20px;
   background-color: #aaaaaa;
   cursor: pointer;
@@ -80,6 +80,29 @@ const TextBox = styled(FlexColumn)`
   white-space: pre-line;
 `;
 
+const MoonToolBox = styled(FlexColumn)`
+  color: white;
+  justify-content: center;
+  align-items: center;
+  white-space: pre-line;
+`;
+
+const svgDefaultProps = { height: "24", viewBox: "0 0 24 24", width: "24" };
+
+const SearchIcon = () => (
+  <svg
+    {...svgDefaultProps}
+    fill="none"
+    stroke={Colors.MIDNIGHT_BLUE}
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <circle cx="11" cy="11" r="8" />
+    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+  </svg>
+);
+
 const Styled = {
   FlexRow,
   FlexColumn,
@@ -88,7 +111,9 @@ const Styled = {
   CloseIcon,
   Background,
   ClickBox,
-  TextBox
+  TextBox,
+  MoonToolBox,
+  SearchIcon
 };
 
 export default Styled;

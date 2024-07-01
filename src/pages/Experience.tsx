@@ -23,7 +23,7 @@ const Experience = () => {
     navigate(routes.about);
   };
   return (
-    <Styled.Background color={Colors.SAND}>
+    <Styled.Background color={Colors.RED}>
       <animated.div style={{ ...props }}>
         <Styled.TextBox onClick={handleClick}>
           <div>
